@@ -9,12 +9,15 @@
 }
 .navbar{
     background-color: #e3e6f3;
+    height: 80px;
+    /* position: fixed; */
 }
 .navbar-nav .nav-link{
     color: black;
     font-weight: 500;
     margin: 0 10px;
     font-size: 16px;
+    font-weight: 600;
     position: relative;
 }
 .navbar-nav .nav-link:hover,
@@ -32,21 +35,102 @@
     transition: width 0.3s ease, left 0.3s ease;
 }
 .navbar-nav .nav-link.custom-active::after,
-        .navbar-nav .nav-link:hover::after {
-            width: 100%;
-            left: 0;
-        }
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
 
 .navbar-toggler{
-    border: none;
+    border: 0px solid #e3e6f3;
     background-color: #e3e6f3;
     outline: none;
 }
-@media screen and (max-width:991px){
+@media screen and (max-width:768px){
     .navbar-nav{
-        text-align: center;
+        background-color: #e3e6f3;
+        text-align: start;
     }
     .navbar-nav .nav-link {
         margin: 10px 0;
+    }
+}
+
+/* Hero Section */
+
+#hero{
+    height: 100vh;
+    background-image: url("img/hero4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero h2{
+    font-size: 56px;
+    font-weight: 600;
+}
+.hero h3{
+    font-size: 48px;
+    font-weight: 600;
+    color: #088178;
+}
+.hero p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.hero span{
+    font-size: 16px;
+    color: gray;
+}
+.hero button{
+    background: none;
+    background-image: url("img/button.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+}
+.hero button a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #088178;
+    font-weight: 600;
+
+}
+@media screen and (max-width:768px) {
+    #hero{
+        height: 70vh;
+        background-position-x: 64%;
+        background-position-y: top 120%;
+    }
+    .hero{
+        height: 70vh;
+    }
+    .hero h2{
+        font-size: 32px;
+    }
+    .hero h3{
+        font-size: 24px;
+    }
+    .hero p{
+        font-size: 10px;
+    }
+    .hero span{
+        font-size: 12px;
+    }
+    .hero button{
+        background-size: 75%;
+    }
+    .hero button a{
+        font-size: 10px;
+        width: 150px;
     }
 }
