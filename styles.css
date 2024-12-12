@@ -261,3 +261,79 @@
     text-decoration: none;
     color: black;
 }
+
+/* Other Banners */
+
+#crazy-deals{
+    background: url("banner/b17.jpg");
+}
+#spring-summer{
+    background: url("banner/b10.jpg");
+}
+#seasonal-sale{
+    background: url("banner/b7.jpg");
+}
+#new-footwear{
+    background: url("banner/b4.jpg");
+}
+#t-shirts{
+    background: url("banner/b18.jpg");
+}
+#crazy-deals,#spring-summer{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #fff;
+}
+#crazy-deals span,#spring-summer span{
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 300;
+}
+#crazy-deals h4,#spring-summer h4{
+    font-size: 28px;
+    font-weight: 800;
+}
+#crazy-deals p,#spring-summer p{
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+#crazy-deals button,#spring-summer button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 12px 18px;
+    font-weight: 500;
+}
+#crazy-deals button a,#spring-summer button a{
+    text-decoration: none;
+    color: #fff;
+}
+#seasonal-sale,#new-footwear,#t-shirts{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #fff;
+}
+#crazy-deals:hover button,#spring-summer:hover button{
+    background-color: #088178;
+    border: 1px solid #088178;
+    color: #fff;
+}
+
+#seasonal-sale h4,#new-footwear h4,#t-shirts h4{
+    font-size: 24px;
+    font-weight: 800;
+}
+#seasonal-sale p,#new-footwear p,#t-shirts p{
+    font-size: 14px;
+    color: #d40606;
+    font-weight: 600;
+}
