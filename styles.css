@@ -13,6 +13,8 @@
 .navbar{
     background-color: #e3e6f3;
     height: 80px;
+    position: sticky;
+    top: 0;
 }
 .navbar-nav .nav-link{
     color: black;
@@ -154,7 +156,7 @@
 .card{
     padding: 20px;
 }
-.card p{
+.card > p{
     text-align: center;
     color: #088178;
     border-radius: 4px;
@@ -169,3 +171,53 @@
 .fe-box4 p{background-color: #d7ddf5;}
 .fe-box5 p{background-color: #f2e6ec;}
 .fe-box6 p{background-color: #d2e8c5;}
+
+/* Featured Products Section */
+
+#featured-products{
+    text-align: center;
+}
+#featured-products h2{
+    font-size: 52px;
+    font-weight: 700;
+}
+#featured-products span{
+    font-size: 18px;
+    color: gray;
+    font-weight: 300;
+}
+#featured-products .card{
+    border: 1px solid #d2e8c5;
+    border-radius: 24px;
+    text-align: start;
+}
+#featured-products .card img{
+    width: 100%;
+    border-radius: 20px;
+}
+#featured-products .card-body .brand{
+    color: #606063;
+    font-size: 14px;
+}
+#featured-products .card-body>p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+#featured-products .card-body .star{
+    color: #ffd700;
+}
+.card-link{
+    justify-content: space-between;
+    text-decoration: none;
+    color: #088178;
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-link i{
+    background-color: #e8f6ea;
+    border-radius: 50%;
+    padding: 8px 12px;
+}
