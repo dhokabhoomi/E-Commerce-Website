@@ -172,41 +172,41 @@
 .fe-box5 p{background-color: #f2e6ec;}
 .fe-box6 p{background-color: #d2e8c5;}
 
-/* Featured Products Section */
+/* Featured Products Section and New Arrivals Section */
 
-#featured-products{
+#featured-products,#new-arrival{
     text-align: center;
 }
-#featured-products h2{
+#featured-products h2,#new-arrival h2{
     font-size: 52px;
     font-weight: 700;
 }
-#featured-products span{
+#featured-products span,#new-arrival span{
     font-size: 18px;
     color: gray;
     font-weight: 300;
 }
-#featured-products .card{
+#featured-products .card,#new-arrival .card{
     border: 1px solid #d2e8c5;
     border-radius: 24px;
     text-align: start;
 }
-#featured-products .card img{
+#featured-products .card img,#new-arrival .card img{
     width: 100%;
     border-radius: 20px;
 }
-#featured-products .card-body .brand{
+#featured-products .card-body .brand,#new-arrival .card-body .brand{
     color: #606063;
     font-size: 14px;
 }
-#featured-products .card-body>p{
+#featured-products .card-body>p,#new-arrival .card-body > p{
     font-size: 18px;
     font-weight: 600;
     color: #1a1a1a;
     margin: 0;
     padding: 0;
 }
-#featured-products .card-body .star{
+#featured-products .card-body .star,#new-arrival .card-body .star{
     color: #ffd700;
 }
 .card-link{
