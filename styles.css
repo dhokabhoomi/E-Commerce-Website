@@ -178,7 +178,7 @@
     text-align: center;
 }
 #featured-products h2,#new-arrival h2{
-    font-size: 52px;
+    font-size: 56px;
     font-weight: 700;
 }
 #featured-products span,#new-arrival span{
@@ -240,7 +240,7 @@
     font-weight: 800;
 }
 #banner h2{
-    font-size: 40px;
+    font-size: 56px;
     font-weight: 900;
 }
 #banner h2 span{
@@ -329,7 +329,7 @@
 }
 
 #seasonal-sale h4,#new-footwear h4,#t-shirts h4{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 800;
 }
 #seasonal-sale p,#new-footwear p,#t-shirts p{
@@ -360,7 +360,7 @@
     padding-right: 30px;
 }
 #newsletter h4{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -484,7 +484,7 @@ form{
 
 /* Page Header section */
 
-#page-header{
+#page-header,#blog-page-header{
     background-image: url("banner/b1.jpg");
     background-position: left;
     background-repeat: no-repeat;
@@ -495,11 +495,11 @@ form{
     align-items: center;
     text-align: center;
 }
-#page-header h2{
-    font-size: 52px;
+#page-header h2,#blog-page-header h2{
+    font-size: 56px;
     font-weight: 700;
 }
-#page-header p{
+#page-header p,#blog-page-header p{
     font-size: 18px;
     font-weight: 500;
 
@@ -519,4 +519,56 @@ form{
     margin-right: 8px;
     border: none;
     border-radius: 4px;
+}
+
+/* Blog Page */
+
+/* Blog Page Header */
+
+#blog-page-header{
+    background-image: url("banner/b19.jpg");
+    background-position: top;
+}
+
+.blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.blog-box img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-right: 40px;
+}
+.blog-box .blog-details h4{
+    font-size: 28px;
+    font-weight: 600;
+}
+.blog-box .blog-details p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #606063;
+    margin: 14px 0 20px 0;
+}
+.blog-box .blog-details a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+}
+.blog-box .blog-details a::after{
+    content: "";
+    height: 1px;
+    width: 50px;
+    background-color: black;
+    position: absolute;
+    top: 7px;
+    right: -60px;
+}
+.blog-box h1{
+    font-size: 60px;
+    font-weight: 550;
 }
