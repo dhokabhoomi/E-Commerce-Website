@@ -479,3 +479,28 @@ form{
     font-size: 14px;
     font-weight: 300;
 }
+
+/* Shop Page */
+
+/* Page Header section */
+
+#page-header{
+    background-image: url("banner/b1.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#page-header h2{
+    font-size: 52px;
+    font-weight: 700;
+}
+#page-header p{
+    font-size: 18px;
+    font-weight: 500;
+
+}
