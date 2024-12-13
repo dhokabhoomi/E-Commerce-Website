@@ -416,3 +416,66 @@ form{
         max-width: 100%;
     }
 }
+
+/* Footer */
+
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.info .logo{
+    margin-bottom: 30px;
+}
+.info h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+.info p{
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.info strong{
+    font-weight: 600;
+    margin-right: 4px;
+}
+.follow{
+    margin-top: 20px;
+    margin-bottom: 12px;
+    color: #222;
+}
+.about,.account{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+.about a,.account a{
+    text-decoration: none;
+    color: #606063;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.about a:hover,.account a:hover{
+    color: #088178;
+}
+.install .payment{
+    display: flex;
+    margin-bottom: 12px;
+}
+.install .payment img{
+    border: 1px solid #088178;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.install p{
+    margin: 16px 0 4px 0;
+}
+.copyright{
+    text-align: center;
+    color: #606063;
+    font-size: 14px;
+    font-weight: 300;
+}
