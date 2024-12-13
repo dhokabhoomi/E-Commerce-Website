@@ -504,3 +504,19 @@ form{
     font-weight: 500;
 
 }
+
+/* Pagination */
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.pagination p{
+    background-color: #088178;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+}
