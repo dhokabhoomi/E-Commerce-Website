@@ -403,6 +403,9 @@ form{
     cursor: pointer;
     height: 45px;
 }
+
+/* Media Query */
+
 @media (max-width: 768px) {
     #newsletter .newsletter-box {
         flex-direction: column;
@@ -529,37 +532,44 @@ form{
     background-image: url("banner/b19.jpg");
     background-position: top;
 }
-
 .blog-box{
+    position: relative;
+    margin-top: 150px;
+}
+.blog-box .blog-content{
     display: flex;
     align-items: center;
-    width: 100%;
+    position: relative;
+    z-index: 2;
 }
-
-.blog-box img{
+.blog-box .blog-content img{
     height: 300px;
     width: 100%;
     object-fit: cover;
-    margin-right: 40px;
+    border-radius: 14px;
 }
-.blog-box .blog-details h4{
-    font-size: 28px;
+.blog-box .blog-content .blog-details {
+    padding: 30px;
+  }
+.blog-box .blog-content .blog-details h5{
+    font-size: 24px;
     font-weight: 600;
+    margin-bottom: 16px;
 }
-.blog-box .blog-details p{
+.blog-box .blog-content .blog-details p{
     font-size: 16px;
     font-weight: 300;
     color: #606063;
-    margin: 14px 0 20px 0;
+    margin-bottom: 24px;
 }
-.blog-box .blog-details a{
+.blog-box .blog-content .blog-details a{
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     position: relative;
 }
-.blog-box .blog-details a::after{
+.blog-box .blog-content .blog-details a::after{
     content: "";
     height: 1px;
     width: 50px;
@@ -569,6 +579,42 @@ form{
     right: -60px;
 }
 .blog-box h1{
-    font-size: 60px;
-    font-weight: 550;
+    font-size: 84px;
+    font-weight: 600;
+    color: #d7dee3;
+    position: absolute;
+    top: -70px;
+    left: 20px;
+    z-index: 1;
+}
+
+/* Media Query */
+
+@media screen and (max-width:768px){
+    .blog-box{
+        margin-top: 100px;
+    }
+    .blog-box .blog-content{
+        flex-direction: column;
+        align-items: start;
+    }
+    .blog-box h1{
+        font-size: 60px;
+        top: -50px;
+        left: 10px;
+    }
+    .blog-box .blog-content .blog-details{
+        padding: 20px;
+        width: 100%;
+    }
+    .blog-box .blog-content .blog-details h5{
+         font-size: 20px;
+    }
+    .blog-box .blog-content .blog-details p{
+        font-size: 14px;
+    }
+    .blog-box .blog-content img{
+        height: 200px;
+        width: 100%;
+    }
 }
