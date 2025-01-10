@@ -351,13 +351,17 @@
 }
 #newsletter .newsletter-box{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 #newsletter .content{
     flex: 1;
     padding-right: 30px;
+    max-width: 600px;
 }
 #newsletter h4{
     font-size: 28px;
@@ -368,6 +372,7 @@
     font-size: 14px;
     font-weight: 600;
     color: #818ea0;
+    line-height: 1.5;
 }
 #newsletter p>span{
     color: #e3c104;
@@ -375,6 +380,9 @@
 .form{
     flex: 1;
     display: flex;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
 }
 form{
     display: flex;
@@ -617,4 +625,25 @@ form{
         height: 200px;
         width: 100%;
     }
+}
+
+/* About Page  */
+
+#about-page-banner{
+    background-image: url(about/banner.png);
+    background-repeat: no-repeat;
+    background-position: top; 
+    background-size: cover;
+    height: 350px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#about-page-banner p{
+    font-size: 16px;
+}
+#about-page-banner h2{
+    font-size: 56px;
+    font-weight: 900;
 }
