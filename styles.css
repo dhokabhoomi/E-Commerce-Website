@@ -647,3 +647,55 @@ form{
     font-size: 56px;
     font-weight: 900;
 }
+.about-head{
+    display: flex;
+    align-items: center;
+    margin: 40px 80px;
+}
+.about-head img{
+    width: 50%;
+}
+.about-head div h2{
+    font-size: 56px;
+    font-weight: 600;
+}
+.about-head div .underline{
+    text-decoration: underline dotted gray;
+}
+.about-head div .scroll{
+    overflow-x: hidden;
+    background-color: #ccc;
+    color: black;
+}
+.about-head div .scroll p{
+    transform: translateX(100%);
+    animation: scroll-left 15s linear infinite;
+}
+@keyframes scroll-left {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.about-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-app h2{
+    font-size: 56px;
+    font-weight: 600;
+    color: #222;
+}
+.about-app .video {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 50px 0;
+}
+.about-app .video video{
+    border-radius: 20px;
+    width: 70%;
+}
