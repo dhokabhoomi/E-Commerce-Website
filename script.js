@@ -208,19 +208,6 @@ function initializeCart() {
         }
     });
 
-    // Apply coupon
-    applyBtn.addEventListener('click', () => {
-        const couponCode = couponInput.value.trim().toLowerCase();
-        if (couponCode === 'discount10') {
-            appliedCoupon = 0.1;
-            alert('Coupon applied! You get 10% off.');
-        } else {
-            appliedCoupon = null;
-            alert('Invalid coupon code.');
-        }
-        updateCartTotals();
-    });
-
     // Initialize cart items
     renderCartItems();
 }
